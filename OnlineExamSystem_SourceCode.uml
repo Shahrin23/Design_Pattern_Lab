@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/shmi_03_04/Downloads/files/OnlineExamSystem_SourceCode</OriginalElement>
+  <nodes>
+    <node x="1428.5" y="1629.5">exam.abstractfactory.MCQEvaluator</node>
+    <node x="1995.0" y="1472.5">exam.builder.ExamConfiguration</node>
+    <node x="468.5" y="1629.5">exam.abstractfactory.ProgrammingEvaluator</node>
+    <node x="1708.5" y="1629.5">exam.abstractfactory.EssayEvaluator</node>
+    <node x="1130.4100601463829" y="1162.5">exam.abstractfactory.QuestionRenderer</node>
+    <node x="240.0" y="2269.5">exam.factory.MidtermExamFactory</node>
+    <node x="1247.5" y="1338.5">exam.abstractfactory.QuestionFactory</node>
+    <node x="630.0" y="1997.5">exam.sourcing.BankQuestionSource</node>
+    <node x="1871.5" y="1349.5">exam.abstractfactory.EssayRenderer</node>
+    <node x="1591.5" y="1349.5">exam.abstractfactory.MCQRenderer</node>
+    <node x="201.0" y="1629.5">exam.factory.ExamFactory</node>
+    <node x="468.5" y="1162.5">exam.abstractfactory.QuestionEvaluator</node>
+    <node x="61.5" y="2009.5">exam.factory.PracticeQuizFactory</node>
+    <node x="1267.5" y="2245.5">exam.abstractfactory.TrueFalseFactory</node>
+    <node x="919.0" y="2245.5">exam.abstractfactory.ProgrammingFactory</node>
+    <node x="158.5" y="989.5">exam.sourcing.QuestionFaker</node>
+    <node x="487.5" y="2257.5">exam.sourcing.FakerQuestionSource</node>
+    <node x="-12.5" y="1336.5">exam.factory.PracticeQuiz</node>
+    <node x="134.5" y="236.5">exam.abstractfactory.EssayQuestion</node>
+    <node x="676.5" y="1350.5">exam.sourcing.QuestionSource</node>
+    <node x="968.5" y="1349.5">exam.abstractfactory.TrueFalseEvaluator</node>
+    <node x="1587.5" y="2245.5">exam.abstractfactory.MCQFactory</node>
+    <node x="-112.5" y="1149.5">exam.factory.Exam</node>
+    <node x="1127.0" y="1629.5">exam.abstractfactory.TrueFalseRenderer</node>
+    <node x="326.5" y="1336.5">exam.factory.MidtermExam</node>
+    <node x="-112.5" y="1616.5">exam.factory.FinalExam</node>
+    <node x="2162.0" y="2147.5">exam.builder.ExamBuilder</node>
+    <node x="-106.5" y="-13.5">exam.abstractfactory.Question</node>
+    <node x="292.5" y="532.5">exam.abstractfactory.TrueFalseQuestion</node>
+    <node x="1847.5" y="1985.5">exam.abstractfactory.EssayFactory</node>
+    <node x="833.0" y="1629.5">exam.abstractfactory.ProgrammingRenderer</node>
+    <node x="230.0" y="2585.5">exam.main.Main</node>
+    <node x="-110.0" y="2269.5">exam.factory.FinalExamFactory</node>
+    <node x="489.0" y="212.5">exam.abstractfactory.ProgrammingQuestion</node>
+    <node x="-65.5" y="532.5">exam.abstractfactory.MCQQuestion</node>
+    <node x="-106.5" y="963.5">exam.sourcing.QuestionBank</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="exam.abstractfactory.TrueFalseFactory" target="exam.abstractfactory.QuestionFactory" relationship="REALIZATION">
+      <point x="91.66666666666666" y="-68.5" />
+      <point x="1496.6666666666667" y="1914.0" />
+      <point x="1385.0" y="1914.0" />
+      <point x="0.0" y="55.5" />
+    </edge>
+    <edge source="exam.sourcing.QuestionBank" target="exam.abstractfactory.MCQQuestion" relationship="CREATE">
+      <point x="55.75" y="-70.5" />
+      <point x="60.75" y="934.0" />
+      <point x="85.0" y="934.0" />
+      <point x="0.0" y="141.5" />
+    </edge>
+    <edge source="exam.abstractfactory.EssayFactory" target="exam.abstractfactory.QuestionFactory" relationship="REALIZATION">
+      <point x="0.0" y="-68.5" />
+      <point x="1985.0" y="1914.0" />
+      <point x="1385.0" y="1914.0" />
+      <point x="0.0" y="55.5" />
+    </edge>
+    <edge source="exam.sourcing.QuestionFaker" target="exam.abstractfactory.MCQQuestion" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="265.0" y="854.0" />
+      <point x="85.0" y="854.0" />
+      <point x="0.0" y="141.5" />
+    </edge>
+    <edge source="exam.main.Main" target="exam.sourcing.BankQuestionSource" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="465.0" y="2554.0" />
+      <point x="745.0" y="2554.0" />
+      <point x="0.0" y="56.5" />
+    </edge>
+    <edge source="exam.abstractfactory.TrueFalseFactory" target="exam.abstractfactory.TrueFalseEvaluator" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="1405.0" y="2214.0" />
+      <point x="1345.0" y="2214.0" />
+      <point x="1345.0" y="1894.0" />
+      <point x="1085.0" y="1894.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.factory.PracticeQuizFactory" target="exam.factory.ExamFactory" relationship="GENERALIZATION">
+      <point x="51.75" y="-44.5" />
+      <point x="216.75" y="1974.0" />
+      <point x="285.0" y="1974.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.abstractfactory.EssayFactory" target="exam.abstractfactory.EssayRenderer" relationship="CREATE">
+      <point x="91.66666666666666" y="-68.5" />
+      <point x="2076.6666666666665" y="1934.0" />
+      <point x="1965.0" y="1934.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.factory.FinalExam" target="exam.factory.Exam" relationship="REALIZATION">
+      <point x="0.0" y="-57.5" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.abstractfactory.MCQFactory" target="exam.abstractfactory.MCQRenderer" relationship="CREATE">
+      <point x="91.66666666666666" y="-68.5" />
+      <point x="1816.6666666666667" y="2214.0" />
+      <point x="1805.0" y="2214.0" />
+      <point x="1805.0" y="1894.0" />
+      <point x="1685.0" y="1894.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.abstractfactory.ProgrammingFactory" target="exam.abstractfactory.QuestionFactory" relationship="REALIZATION">
+      <point x="97.33333333333334" y="-68.5" />
+      <point x="1162.3333333333333" y="1914.0" />
+      <point x="1385.0" y="1914.0" />
+      <point x="0.0" y="55.5" />
+    </edge>
+    <edge source="exam.factory.MidtermExam" target="exam.factory.Exam" relationship="REALIZATION">
+      <point x="0.0" y="-57.5" />
+      <point x="405.0" y="1314.0" />
+      <point x="-35.0" y="1314.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.abstractfactory.MCQFactory" target="exam.abstractfactory.QuestionFactory" relationship="REALIZATION">
+      <point x="0.0" y="-68.5" />
+      <point x="1725.0" y="1914.0" />
+      <point x="1385.0" y="1914.0" />
+      <point x="0.0" y="55.5" />
+    </edge>
+    <edge source="exam.main.Main" target="exam.abstractfactory.ProgrammingFactory" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="465.0" y="2554.0" />
+      <point x="885.0" y="2554.0" />
+      <point x="885.0" y="2194.0" />
+      <point x="967.6666666666667" y="2194.0" />
+      <point x="-97.33333333333334" y="-68.5" />
+    </edge>
+    <edge source="exam.abstractfactory.ProgrammingFactory" target="exam.abstractfactory.ProgrammingEvaluator" relationship="CREATE">
+      <point x="-97.33333333333334" y="-68.5" />
+      <point x="967.6666666666667" y="2214.0" />
+      <point x="965.0" y="2214.0" />
+      <point x="965.0" y="1954.0" />
+      <point x="585.0" y="1954.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.factory.PracticeQuizFactory" target="exam.factory.PracticeQuiz" relationship="CREATE">
+      <point x="-51.75" y="-44.5" />
+      <point x="113.25" y="1954.0" />
+      <point x="65.0" y="1954.0" />
+      <point x="0.0" y="57.5" />
+    </edge>
+    <edge source="exam.sourcing.QuestionBank" target="exam.abstractfactory.Question" relationship="TO_MANY">
+      <point x="-55.75" y="-70.5" />
+      <point x="-50.75" y="934.0" />
+      <point x="-95.0" y="934.0" />
+      <point x="-95.0" y="514.0" />
+      <point x="-70.75" y="514.0" />
+      <point x="-35.75" y="67.5" />
+    </edge>
+    <edge source="exam.abstractfactory.EssayFactory" target="exam.sourcing.QuestionSource" relationship="TO_ONE">
+      <point x="-91.66666666666666" y="-68.5" />
+      <point x="1893.3333333333335" y="1774.0" />
+      <point x="1045.0" y="1774.0" />
+      <point x="1045.0" y="1734.0" />
+      <point x="809.25" y="1734.0" />
+      <point x="44.25" y="43.5" />
+    </edge>
+    <edge source="exam.sourcing.QuestionBank" target="exam.abstractfactory.EssayQuestion" relationship="CREATE">
+      <point x="55.75" y="-70.5" />
+      <point x="60.75" y="934.0" />
+      <point x="85.0" y="934.0" />
+      <point x="85.0" y="874.0" />
+      <point x="265.0" y="874.0" />
+      <point x="0.0" y="117.5" />
+    </edge>
+    <edge source="exam.sourcing.QuestionFaker" target="exam.abstractfactory.EssayQuestion" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="0.0" y="117.5" />
+    </edge>
+    <edge source="exam.main.Main" target="exam.builder.ExamBuilder" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="465.0" y="2554.0" />
+      <point x="2465.0" y="2554.0" />
+      <point x="2465.0" y="2114.0" />
+      <point x="2305.0" y="2114.0" />
+      <point x="0.0" y="-166.5" />
+    </edge>
+    <edge source="exam.abstractfactory.EssayRenderer" target="exam.abstractfactory.QuestionRenderer" relationship="REALIZATION">
+      <point x="-0.0" y="-44.5" />
+      <point x="1965.0" y="1313.0" />
+      <point x="1225.0" y="1313.0" />
+      <point x="-0.0" y="31.5" />
+    </edge>
+    <edge source="exam.abstractfactory.TrueFalseEvaluator" target="exam.abstractfactory.QuestionEvaluator" relationship="REALIZATION">
+      <point x="0.0" y="-44.5" />
+      <point x="1085.0" y="1294.0" />
+      <point x="585.0" y="1294.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="exam.sourcing.BankQuestionSource" target="exam.sourcing.QuestionSource" relationship="REALIZATION">
+      <point x="0.0" y="-56.5" />
+      <point x="745.0" y="1974.0" />
+      <point x="725.0" y="1974.0" />
+      <point x="725.0" y="1474.0" />
+      <point x="720.75" y="1474.0" />
+      <point x="-44.25" y="43.5" />
+    </edge>
+    <edge source="exam.factory.MidtermExamFactory" target="exam.factory.MidtermExam" relationship="CREATE">
+      <point x="52.5" y="-44.5" />
+      <point x="397.5" y="2214.0" />
+      <point x="405.0" y="2214.0" />
+      <point x="0.0" y="57.5" />
+    </edge>
+    <edge source="exam.abstractfactory.TrueFalseFactory" target="exam.sourcing.QuestionSource" relationship="TO_ONE">
+      <point x="-91.66666666666666" y="-68.5" />
+      <point x="1313.3333333333333" y="1774.0" />
+      <point x="1045.0" y="1774.0" />
+      <point x="1045.0" y="1734.0" />
+      <point x="809.25" y="1734.0" />
+      <point x="44.25" y="43.5" />
+    </edge>
+    <edge source="exam.builder.ExamBuilder" target="exam.builder.ExamConfiguration" relationship="CREATE">
+      <point x="0.0" y="-166.5" />
+      <point x="2305.0" y="2094.0" />
+      <point x="2205.0" y="2094.0" />
+      <point x="0.0" y="201.5" />
+    </edge>
+    <edge source="exam.main.Main" target="exam.abstractfactory.TrueFalseFactory" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="465.0" y="2554.0" />
+      <point x="1245.0" y="2554.0" />
+      <point x="1245.0" y="2194.0" />
+      <point x="1405.0" y="2194.0" />
+      <point x="0.0" y="-68.5" />
+    </edge>
+    <edge source="exam.abstractfactory.MCQEvaluator" target="exam.abstractfactory.QuestionEvaluator" relationship="REALIZATION">
+      <point x="0.0" y="-44.5" />
+      <point x="1545.0" y="1294.0" />
+      <point x="585.0" y="1294.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="exam.abstractfactory.MCQFactory" target="exam.abstractfactory.MCQEvaluator" relationship="CREATE">
+      <point x="91.66666666666666" y="-68.5" />
+      <point x="1816.6666666666667" y="2214.0" />
+      <point x="1805.0" y="2214.0" />
+      <point x="1805.0" y="1894.0" />
+      <point x="1545.0" y="1894.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.abstractfactory.MCQFactory" target="exam.sourcing.QuestionSource" relationship="TO_ONE">
+      <point x="-91.66666666666666" y="-68.5" />
+      <point x="1633.3333333333333" y="1774.0" />
+      <point x="1045.0" y="1774.0" />
+      <point x="1045.0" y="1734.0" />
+      <point x="809.25" y="1734.0" />
+      <point x="44.25" y="43.5" />
+    </edge>
+    <edge source="exam.main.Main" target="exam.abstractfactory.EssayFactory" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="465.0" y="2554.0" />
+      <point x="2145.0" y="2554.0" />
+      <point x="2145.0" y="1954.0" />
+      <point x="2076.6666666666665" y="1954.0" />
+      <point x="91.66666666666666" y="-68.5" />
+    </edge>
+    <edge source="exam.sourcing.QuestionBank" target="exam.abstractfactory.TrueFalseQuestion" relationship="CREATE">
+      <point x="55.75" y="-70.5" />
+      <point x="60.75" y="934.0" />
+      <point x="85.0" y="934.0" />
+      <point x="85.0" y="894.0" />
+      <point x="465.0" y="894.0" />
+      <point x="0.0" y="141.5" />
+    </edge>
+    <edge source="exam.abstractfactory.EssayFactory" target="exam.abstractfactory.EssayEvaluator" relationship="CREATE">
+      <point x="91.66666666666666" y="-68.5" />
+      <point x="2076.6666666666665" y="1934.0" />
+      <point x="1965.0" y="1934.0" />
+      <point x="1965.0" y="1754.0" />
+      <point x="1825.0" y="1754.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.abstractfactory.EssayQuestion" target="exam.abstractfactory.Question" relationship="REALIZATION">
+      <point x="0.0" y="-117.5" />
+      <point x="265.0" y="154.0" />
+      <point x="0.75" y="154.0" />
+      <point x="35.75" y="67.5" />
+    </edge>
+    <edge source="exam.abstractfactory.ProgrammingQuestion" target="exam.abstractfactory.Question" relationship="REALIZATION">
+      <point x="0.0" y="-141.5" />
+      <point x="665.0" y="174.0" />
+      <point x="265.0" y="174.0" />
+      <point x="265.0" y="154.0" />
+      <point x="0.75" y="154.0" />
+      <point x="35.75" y="67.5" />
+    </edge>
+    <edge source="exam.abstractfactory.ProgrammingFactory" target="exam.sourcing.QuestionSource" relationship="TO_ONE">
+      <point x="0.0" y="-68.5" />
+      <point x="1065.0" y="1774.0" />
+      <point x="1045.0" y="1774.0" />
+      <point x="1045.0" y="1734.0" />
+      <point x="809.25" y="1734.0" />
+      <point x="44.25" y="43.5" />
+    </edge>
+    <edge source="exam.sourcing.QuestionFaker" target="exam.abstractfactory.TrueFalseQuestion" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="265.0" y="954.0" />
+      <point x="465.0" y="954.0" />
+      <point x="0.0" y="141.5" />
+    </edge>
+    <edge source="exam.factory.MidtermExamFactory" target="exam.factory.ExamFactory" relationship="GENERALIZATION">
+      <point x="-52.5" y="-44.5" />
+      <point x="292.5" y="1974.0" />
+      <point x="285.0" y="1974.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.main.Main" target="exam.abstractfactory.MCQFactory" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="465.0" y="2554.0" />
+      <point x="1565.0" y="2554.0" />
+      <point x="1565.0" y="2194.0" />
+      <point x="1816.6666666666667" y="2194.0" />
+      <point x="91.66666666666666" y="-68.5" />
+    </edge>
+    <edge source="exam.abstractfactory.ProgrammingEvaluator" target="exam.abstractfactory.QuestionEvaluator" relationship="REALIZATION">
+      <point x="0.0" y="-44.5" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="exam.abstractfactory.TrueFalseFactory" target="exam.abstractfactory.TrueFalseRenderer" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="1405.0" y="2214.0" />
+      <point x="1345.0" y="2214.0" />
+      <point x="1345.0" y="1894.0" />
+      <point x="1225.0" y="1894.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.sourcing.FakerQuestionSource" target="exam.sourcing.QuestionSource" relationship="REALIZATION">
+      <point x="0.0" y="-56.5" />
+      <point x="605.0" y="1974.0" />
+      <point x="725.0" y="1974.0" />
+      <point x="725.0" y="1474.0" />
+      <point x="720.75" y="1474.0" />
+      <point x="-44.25" y="43.5" />
+    </edge>
+    <edge source="exam.abstractfactory.ProgrammingRenderer" target="exam.abstractfactory.QuestionRenderer" relationship="REALIZATION">
+      <point x="-0.0" y="-44.5" />
+      <point x="945.0" y="1539.0" />
+      <point x="1840.0" y="1539.0" />
+      <point x="1840.0" y="1313.0" />
+      <point x="1225.0" y="1313.0" />
+      <point x="-0.0" y="31.5" />
+    </edge>
+    <edge source="exam.factory.FinalExamFactory" target="exam.factory.FinalExam" relationship="CREATE">
+      <point x="-47.5" y="-44.5" />
+      <point x="-62.5" y="2234.0" />
+      <point x="-35.0" y="2234.0" />
+      <point x="0.0" y="57.5" />
+    </edge>
+    <edge source="exam.sourcing.QuestionFaker" target="exam.abstractfactory.ProgrammingQuestion" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="265.0" y="974.0" />
+      <point x="665.0" y="974.0" />
+      <point x="0.0" y="141.5" />
+    </edge>
+    <edge source="exam.main.Main" target="exam.factory.MidtermExamFactory" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="465.0" y="2234.0" />
+      <point x="397.5" y="2234.0" />
+      <point x="52.5" y="-44.5" />
+    </edge>
+    <edge source="exam.abstractfactory.MCQRenderer" target="exam.abstractfactory.QuestionRenderer" relationship="REALIZATION">
+      <point x="-0.0" y="-44.5" />
+      <point x="1685.0" y="1313.0" />
+      <point x="1225.0" y="1313.0" />
+      <point x="-0.0" y="31.5" />
+    </edge>
+    <edge source="exam.abstractfactory.TrueFalseRenderer" target="exam.abstractfactory.QuestionRenderer" relationship="REALIZATION">
+      <point x="-0.0" y="-44.5" />
+      <point x="1225.0" y="1539.0" />
+      <point x="1840.0" y="1539.0" />
+      <point x="1840.0" y="1313.0" />
+      <point x="1225.0" y="1313.0" />
+      <point x="-0.0" y="31.5" />
+    </edge>
+    <edge source="exam.factory.FinalExamFactory" target="exam.factory.ExamFactory" relationship="GENERALIZATION">
+      <point x="47.5" y="-44.5" />
+      <point x="32.5" y="1974.0" />
+      <point x="285.0" y="1974.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.factory.PracticeQuiz" target="exam.factory.Exam" relationship="REALIZATION">
+      <point x="0.0" y="-57.5" />
+      <point x="65.0" y="1314.0" />
+      <point x="-35.0" y="1314.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.abstractfactory.EssayEvaluator" target="exam.abstractfactory.QuestionEvaluator" relationship="REALIZATION">
+      <point x="0.0" y="-44.5" />
+      <point x="1825.0" y="1294.0" />
+      <point x="585.0" y="1294.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="exam.sourcing.QuestionBank" target="exam.abstractfactory.ProgrammingQuestion" relationship="CREATE">
+      <point x="55.75" y="-70.5" />
+      <point x="60.75" y="934.0" />
+      <point x="85.0" y="934.0" />
+      <point x="85.0" y="914.0" />
+      <point x="665.0" y="914.0" />
+      <point x="0.0" y="141.5" />
+    </edge>
+    <edge source="exam.abstractfactory.ProgrammingFactory" target="exam.abstractfactory.ProgrammingRenderer" relationship="CREATE">
+      <point x="-97.33333333333334" y="-68.5" />
+      <point x="967.6666666666667" y="2214.0" />
+      <point x="965.0" y="2214.0" />
+      <point x="965.0" y="1954.0" />
+      <point x="945.0" y="1954.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="exam.abstractfactory.TrueFalseQuestion" target="exam.abstractfactory.Question" relationship="REALIZATION">
+      <point x="0.0" y="-141.5" />
+      <point x="465.0" y="174.0" />
+      <point x="265.0" y="174.0" />
+      <point x="265.0" y="154.0" />
+      <point x="0.75" y="154.0" />
+      <point x="35.75" y="67.5" />
+    </edge>
+    <edge source="exam.abstractfactory.MCQQuestion" target="exam.abstractfactory.Question" relationship="REALIZATION">
+      <point x="0.0" y="-141.5" />
+      <point x="85.0" y="174.0" />
+      <point x="265.0" y="174.0" />
+      <point x="265.0" y="154.0" />
+      <point x="0.75" y="154.0" />
+      <point x="35.75" y="67.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.2045701849836779" showDependencies="true" x="1175.0000000000002" y="1354.5" />
+  <SelectedNodes>
+    <node>exam.abstractfactory.QuestionRenderer</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
